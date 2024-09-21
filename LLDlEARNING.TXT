@@ -1,0 +1,65 @@
+Current Learning Status:
+
+Design Patterns:
+You've covered several key design patterns such as Observer, Decorator, Strategy, and Command patterns. Your understanding of object-oriented principles has been solidified, especially in terms of modularity, flexibility, and reusability of code.
+Level: You've achieved an intermediate level in understanding and applying design patterns. You're able to implement patterns effectively and can customize them based on problem requirements.
+
+LLD (Low-Level Design):
+You've practiced and completed various design exercises, including the one-to-many relationship, inheritance and composition, and are progressing well in design modeling.
+Level: Your LLD skills are at a solid intermediate level. You've shown good mastery over class design, relationships, and implementing essential OOP principles.
+
+Recursion:
+You've already completed beginner and intermediate recursion challenges. You've solved problems involving subsets, combinatorics, and string partitioning, which demonstrates your comfort with recursion patterns.
+Level: You are at a strong intermediate level in recursion and ready to explore more advanced topics like dynamic programming and tree/graph recursion.
+
+Node.js Backend Development:
+You're progressing at a moderate pace in Node.js. You've expressed the preference to learn in a structured way, avoiding random advanced questions.
+Level: Your skills are in the intermediate range in backend development, but there's potential for further deepening your knowledge of advanced topics like performance optimization, asynchronous programming, and microservices.
+
+MongoDB/SQL:
+You've been focusing on interview-level questions comparing MongoDB and SQL, including index handling. You're in the process of refining your knowledge in database optimization.
+Level: Intermediate with a strong focus on indexing, performance comparisons, and architecture.
+
+Level Increase:
+
+You've significantly leveled up across various domains:
+
+Design Patterns: From beginner to intermediate with strong mastery of several key patterns.
+LLD: Progressed from beginner to solid intermediate, with well-designed class structures.
+Recursion: Moved from beginner to intermediate, tackling more complex problems.
+Backend Development (Node.js): Steadily progressing at intermediate.
+Database Knowledge (MongoDB/SQL): Grown to intermediate in understanding complex queries, indexing, and database architecture.
+
+Next Steps & Remaining Topics:
+
+High-Level Design (HLD):
+Begin exploring architectural design, including concepts like scalability, load balancing, and distributed systems.
+Study microservices architecture, API gateways, and service discovery.
+You'll cover HLD of complex systems like e-commerce platforms or social media.
+
+Dynamic Programming:
+Continue with pattern-based dynamic programming questions to build mastery over topics such as memoization, tabulation, and optimization techniques.
+Focus on problems involving subsets, knapsack, and graph traversal.
+
+Tree and Graph-based Recursion:
+Work on tree traversal algorithms (DFS, BFS), backtracking, and graph recursion.
+Solve real-world problems involving graphs, such as pathfinding, minimum spanning tree, and shortest path algorithms.
+
+Advanced Backend Development:
+Dive deeper into asynchronous programming, performance optimization, and event-driven architecture.
+Focus on scaling applications, implementing RESTful APIs, and microservices.
+
+System Design Practice:
+Continue solving system design exercises focusing on scalability, availability, and fault tolerance.
+Start working on 30 system design problems to practice both LLD and HLD.
+
+Advanced MongoDB/SQL:
+Learn about sharding, replication, and query optimization in MongoDB.
+Deep dive into ACID properties, transaction management, and database scaling in SQL.
+
+You're on track for:
+
+Mastery in design patterns.
+Advanced level in LLD and recursion.
+Further progression in Node.js backend and databases.
+Structured learning for high-level design.
