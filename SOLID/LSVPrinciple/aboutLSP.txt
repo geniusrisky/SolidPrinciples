@@ -1,0 +1,11 @@
+Liskov Substitution Principle (LSP)
+Principle: Subtypes must be substitutable for their base types without altering the correctness of the program.
+
+Commonly Associated Design Patterns:
+
+Factory Method Pattern: Ensures that subclasses can be substituted without altering the client’s code by using a common interface for object creation.
+Template Method Pattern: The template method ensures that the algorithm’s steps work correctly when subclassed and overridden, maintaining the LSP.
+Why Certain Patterns Are Not a Good Fit:
+
+Observer Pattern: It decouples objects but doesn’t inherently help with ensuring that a subclass can be substituted for a superclass without breaking functionality.
+Proxy Pattern: Although Proxy can act as a substitute for another object, it’s designed more for controlling access than ensuring behavioral substitution, which may not fully align with LSP.

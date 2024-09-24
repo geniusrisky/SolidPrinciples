@@ -1,0 +1,23 @@
+2. Open/Closed Principle (OCP)
+Principle: Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+
+
+//////////////////////////////////
+
+
+Commonly Associated Design Patterns:
+
+Strategy Pattern: Allows extending algorithms without modifying existing code by encapsulating them into separate strategy classes.
+
+Decorator Pattern: You can add new functionality to objects without modifying existing code.
+
+Template Method Pattern: Allows extending behavior by letting subclasses override steps in the algorithm without changing the algorithm’s structure.
+
+
+/////////////////////////////////
+
+
+Why Certain Patterns Are Not a Good Fit:
+
+Singleton Pattern: Enforces only one instance of a class, which usually doesn’t allow for easy extension. Singleton makes the class closed to extension and introduces coupling, violating OCP.
+Factory Pattern: While it abstracts object creation, it does not inherently support extension or behavior modification without modifying the factory logic itself.

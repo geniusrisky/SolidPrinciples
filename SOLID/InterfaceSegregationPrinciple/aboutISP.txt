@@ -1,0 +1,11 @@
+. Interface Segregation Principle (ISP)
+Principle: Clients should not be forced to depend on interfaces they do not use.
+
+Commonly Associated Design Patterns:
+
+Adapter Pattern: Allows a class with an incompatible interface to be used as a substitute by creating a separate, smaller interface tailored to the client’s needs.
+Facade Pattern: Breaks down a complex system by providing a simplified interface that clients can use without depending on the full complexity of the system.
+Why Certain Patterns Are Not a Good Fit:
+
+Decorator Pattern: Decorators extend functionality but don't inherently help in creating lean interfaces. They can potentially add methods to the decorator chain that are irrelevant to some clients, violating ISP.
+Composite Pattern: Combines objects into tree structures, but in certain implementations, it may lead to clients interacting with more methods than they need, violating ISP.

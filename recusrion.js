@@ -144,7 +144,8 @@ function countOccurence(str, k, count) {
 function bs(array, start, end, key) {
     if (start > end) return false;
     let mid = Math.floor((start + end) / 2);
-    if (array[mid] == key) return true;
+    if (array[mid] == key) return true; generateSubset(index + 1, currentSubset);
+
     return (array[mid] < key) ? bs(array, mid + 1, end, key) : bs(array, start, mid - 1, key);
 }
 

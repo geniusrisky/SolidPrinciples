@@ -1,0 +1,11 @@
+Principle: High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+Commonly Associated Design Patterns:
+
+Dependency Injection: Facilitates DIP by injecting dependencies from outside, ensuring that the high-level module depends on interfaces or abstract classes.
+Abstract Factory Pattern: Enforces dependency on abstractions for object creation rather than concrete classes.
+Strategy Pattern: High-level components depend on an abstraction (the strategy) rather than a specific implementation.
+Why Certain Patterns Are Not a Good Fit:
+
+Singleton Pattern: Directly violates DIP because it introduces tight coupling to a concrete class. The client becomes dependent on the Singleton’s implementation, breaking the principle of depending on abstractions.
+Builder Pattern: While useful for object creation, the Builder pattern doesn’t inherently solve the issue of dependency on concrete implementations or abstractions.
