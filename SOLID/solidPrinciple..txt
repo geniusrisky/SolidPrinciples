@@ -1,0 +1,96 @@
+1. Single Responsibility Principle (SRP)
+Principle: A class should have one, and only one, reason to change.
+
+Commonly Associated Design Patterns:
+
+Decorator Pattern: Helps break responsibilities by adding behavior to objects without modifying their class. This allows each class to remain focused on one responsibility.
+Facade Pattern: Simplifies a complex subsystem by providing a unified interface, keeping the responsibility of each subsystem class separate.
+Why Certain Patterns Are Not a Good Fit:
+
+Strategy Pattern: While it's good for encapsulating algorithms, Strategy doesn’t inherently help with breaking down responsibilities. If not designed carefully, it can still lead to a class doing too much.
+Abstract Factory Pattern: Its purpose is to create families of related objects, which is not directly related to enforcing a single responsibility.
+
+
+
+
+
+2. Open/Closed Principle (OCP)
+Principle: Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+
+Commonly Associated Design Patterns:
+
+Strategy Pattern: Allows extending algorithms without modifying existing code by encapsulating them into separate strategy classes.
+Decorator Pattern: You can add new functionality to objects without modifying existing code.
+Template Method Pattern: Allows extending behavior by letting subclasses override steps in the algorithm without changing the algorithm’s structure.
+Why Certain Patterns Are Not a Good Fit:
+
+Singleton Pattern: Enforces only one instance of a class, which usually doesn’t allow for easy extension. Singleton makes the class closed to extension and introduces coupling, violating OCP.
+Factory Pattern: While it abstracts object creation, it does not inherently support extension or behavior modification without modifying the factory logic itself.
+
+
+
+
+
+
+3. Liskov Substitution Principle (LSP)
+Principle: Subtypes must be substitutable for their base types without altering the correctness of the program.
+
+Commonly Associated Design Patterns:
+
+Factory Method Pattern: Ensures that subclasses can be substituted without altering the client’s code by using a common interface for object creation.
+Template Method Pattern: The template method ensures that the algorithm’s steps work correctly when subclassed and overridden, maintaining the LSP.
+Why Certain Patterns Are Not a Good Fit:
+
+Observer Pattern: It decouples objects but doesn’t inherently help with ensuring that a subclass can be substituted for a superclass without breaking functionality.
+Proxy Pattern: Although Proxy can act as a substitute for another object, it’s designed more for controlling access than ensuring behavioral substitution, which may not fully align with LSP.
+
+
+
+
+
+4. Interface Segregation Principle (ISP)
+Principle: Clients should not be forced to depend on interfaces they do not use.
+
+Commonly Associated Design Patterns:
+
+Adapter Pattern: Allows a class with an incompatible interface to be used as a substitute by creating a separate, smaller interface tailored to the client’s needs.
+Facade Pattern: Breaks down a complex system by providing a simplified interface that clients can use without depending on the full complexity of the system.
+Why Certain Patterns Are Not a Good Fit:
+
+Decorator Pattern: Decorators extend functionality but don't inherently help in creating lean interfaces. They can potentially add methods to the decorator chain that are irrelevant to some clients, violating ISP.
+Composite Pattern: Combines objects into tree structures, but in certain implementations, it may lead to clients interacting with more methods than they need, violating ISP.
+
+
+
+
+
+5. Dependency Inversion Principle (DIP)
+Principle: High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+Commonly Associated Design Patterns:
+
+Dependency Injection: Facilitates DIP by injecting dependencies from outside, ensuring that the high-level module depends on interfaces or abstract classes.
+Abstract Factory Pattern: Enforces dependency on abstractions for object creation rather than concrete classes.
+Strategy Pattern: High-level components depend on an abstraction (the strategy) rather than a specific implementation.
+
+
+
+
+
+Why Certain Patterns Are Not a Good Fit:
+
+
+Singleton Pattern: Directly violates DIP because it introduces tight coupling to a concrete class. The client becomes dependent on the Singleton’s implementation, breaking the principle of depending on abstractions.
+Builder Pattern: While useful for object creation, the Builder pattern doesn’t inherently solve the issue of dependency on concrete implementations or abstractions.
+Key Insights on Relationships:
+Design Patterns Can Be Used with Multiple SOLID Principles:
+Many design patterns are versatile and can be used to fulfill multiple SOLID principles. For example, the Strategy Pattern supports both OCP (because it allows the behavior to be extended) and DIP (because the client depends on an abstract strategy rather than a concrete class).
+
+Certain Design Patterns Align More Naturally with Specific SOLID Principles:
+Patterns like Decorator naturally align with SRP and OCP because they help maintain a separation of concerns and allow for easy extension without modifying existing code. Others, like Adapter, are tailored more toward ISP.
+
+Some Patterns Don’t Align with Certain SOLID Principles:
+For example, Singleton tends to violate DIP by coupling the client to a specific class and making it hard to extend, which is contrary to both OCP and DIP. Similarly, Factory Patterns focus on object creation but don’t necessarily enforce SRP or LSP unless carefully designed.
+
+Customization and Context Matter:
+The suitability of a pattern for enforcing a SOLID principle depends on the context of the problem. For example, while Composite Pattern can be useful for structuring hierarchical data, it may violate ISP if clients are forced to interact with methods they don’t need. Similarly, Observer Pattern is not directly associated with LSP, but if subclassed observers don’t properly maintain the contract of the parent class, it could violate LSP.
