@@ -105,5 +105,8 @@ function minimumCost(cost){
 
 
 
-
+                                                                 
 //console.log(minimumCost( [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]))
+                                                                 
+
+

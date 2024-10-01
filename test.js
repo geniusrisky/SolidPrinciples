@@ -46,3 +46,62 @@ const permute = (arr) => {
 };
 
 console.log(permute(arr))
+
+
+
+
+
+var minStartingIndex = function(s, pattern) {
+    const n = s.length;
+   const m = pattern.length;
+
+   // If the pattern is longer than the string, return -1
+   if (m > n) return -1;
+
+   // Preprocess the pattern to create a sliding window
+   const window = new Array(m).fill(0);
+   for (let i = 0; i < m; i++) {
+       window[pattern.charCodeAt(i) - 'a']++;
+   }
+
+   // Initialize the sliding window count
+   let windowCount = m;
+
+   // Iterate over the string using a sliding window
+   let left = 0, right = 0;
+   while (right < n) {
+       // Add the current character to the window
+       window[s.charCodeAt(right) - 'a']--;
+       if (window[s.charCodeAt(right) - 'a'] >= 0) {
+           windowCount--;
+       }
+
+       // If the window contains all characters from the pattern, check if it's a valid match
+       if (windowCount === 0) {
+           // Check if the current window is a valid match
+           let isValid = true;
+           for (let i = left; i < right; i++) {
+               if (window[s.charCodeAt(i) - 'a'] < 0) {
+                   isValid = false;
+                   break;
+               }
+           }
+
+           // If it's a valid match, return the starting index
+           if (isValid) {
+               return left;
+           }
+
+           // Otherwise, slide the window to the right
+           window[s.charCodeAt(left) - 'a']++;
+           windowCount++;
+           left++;
+       }
+
+       // Move the right pointer
+       right++;
+   }
+
+   // If no valid index is found, return -1
+   return -1;
+};

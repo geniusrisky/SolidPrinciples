@@ -63,3 +63,17 @@ Mastery in design patterns.
 Advanced level in LLD and recursion.
 Further progression in Node.js backend and databases.
 Structured learning for high-level design.
+
+
+
+
+                            Advance level Design Patterns
+
+Advanced Design Patterns: You can explore patterns like the Flyweight, Mediator, or Memento pattern in depth.
+
+
+Concurrency Patterns: Learn patterns that deal with multithreading, like Producer-Consumer, Read-Write Lock, etc.
+
+Anti-Patterns: Study common mistakes in software design (e.g., God Object, Spaghetti Code).
+
+System Design: Dive deeper into system design topics such as microservices, scalability, and caching strategies.
